@@ -1,0 +1,14 @@
+.FAQ {
+  font-family: 'Inter', sans-serif;
+}
+
+.FAQ__header{
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 100%;
+
+  text-align: center;
+  letter-spacing: -0.03em;
+
+  color: #000;
+}

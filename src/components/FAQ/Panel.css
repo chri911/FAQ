@@ -1,0 +1,12 @@
+.Panel {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: #212121;
+  margin: 36px 0px;
+}
+
+.Panel__link {
+  color: #1C54D3;
+  text-decoration: none;
+}
