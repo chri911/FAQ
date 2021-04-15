@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
     fontFamily: 'Inter',
+    padding: 0,
   },
   MuiAccordionroot: {
     "&.MuiAccordion-root:before": {
@@ -26,13 +27,23 @@ const useStyles = makeStyles((theme) => ({
     margin: '36px 0 20px',
   },
   title: {
-    margin: '36px 0',
+    margin: '0',
+    padding: '36px 0',
     fontWeight: '800',
     fontSize: '42px',
     lineHeight: '125%',
     letterSpacing: '-0.03em',
     color: 'rgba(0, 0, 0, 0.87)',
     textAlign: 'left',
+    position: 'relative',
+    '&.makeStyles-title-15:before': {
+      content: '""',
+      position: 'absolute',
+      top: 0,
+      height: '2px',
+      width: '70px',
+      backgroundColor: '#000',
+    }
   },
   details: {
     fontFamily: 'Inter',
@@ -67,9 +78,12 @@ export const SimpleAccordion = ({data, header}) => {
   
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} style={{padding: 0}}>
       <h2 className={classes.title}>
-        {header}
+        {/* <Typography component="h2" > */}
+          {header}
+        {/* </Typography> */}
+        
       </h2>
       {data.map(accordion => {
         const {id, secondaryHeading, details} = accordion;

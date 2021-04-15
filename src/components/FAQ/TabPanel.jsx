@@ -13,7 +13,7 @@ const TabPanel = (props) => {
   const { children, value, index, ...other } = props;
 
   return (
-    <div
+    <div 
       role="tabpanel"
       hidden={value !== index}
       id={`vertical-tabpanel-${index}`}
@@ -51,15 +51,18 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     height: 224,
     overflow: 'initial',
+    padding: 0,
   },
   tabs: {
     fontFamily: 'Inter',
     borderRight: `1px solid ${theme.palette.divider}`,
     overflow: 'initial',
+    
   },
   tab: {
     fontWeight: '600',
     fontFamily: 'Inter',
+    
   }
 }));
 
