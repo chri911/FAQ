@@ -46,11 +46,11 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   details: {
-    fontFamily: 'Inter',
-    fontSize: '16px',
-    lineHeight: '150%',
+    // fontFamily: 'Inter',
+    // fontSize: '16px',
+    // lineHeight: '150%',
     color: '#212121',
-    margin: '36px 0',
+    // margin: '36px 0',
   }
 }));
 

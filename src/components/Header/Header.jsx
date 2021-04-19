@@ -13,36 +13,39 @@ export const Header = () => {
         justify="space-between"
         alignItems="center"
       >
-        {/* </Grid> */}
-          <Grid item xs={6} sm={2}>
-            <Link href="#" color="inherit">
+        <Grid container item xs={4} justify="space-around">
+          <Grid item xs={2}>
+            <Link href="#">
               UTORG
             </Link>
           </Grid>
-          <Grid item xs={6} sm={2}>
-          {/* <Typography> */}
+          <Grid item xs={3}>
             <Link href="#">
-              For merchant
+              <Typography variant="button">
+                For merchant
+              </Typography>
+              
             </Link>
           </Grid>
-            <Grid item xs={6} sm={2}>
-              <Link href="#" color="inherit">
-              Buy crypto
-            </Link>
+            <Grid item xs={3}>
+              <Link href="#">
+                <Typography variant="button">
+                  Buy crypto
+                </Typography>
+              </Link>
             </Grid>
-            
-          {/* </Typography> */}
-        {/* </Grid> */}
-        
-        <Grid item xs={6} sm={3}>
+        </Grid>
+        <Grid container item xs={6} justify="flex-end">
+        <Grid item xs={4}>
           <Button>
             Sign in
           </Button>
         </Grid>
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={4}>
           <Button variant="outlined" color="primary">
             Sign up for free
           </Button>
+        </Grid>
         </Grid>
       
       </Grid>

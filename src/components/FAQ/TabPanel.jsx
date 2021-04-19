@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
   },
   tab: {
     fontWeight: '600',
-    fontFamily: 'Inter',
+    // fontFamily: 'Inter',
     
   }
 }));
